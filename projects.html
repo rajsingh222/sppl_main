@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Projects </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="SPPL India" name="keywords">
+    <meta content="spplindia.org" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo3.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+
+    
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  gap: 40px; /* more spacing between cards */
+  max-width: 1000px; /* keep them centered */
+  margin: 0 auto; /* center horizontally */
+  padding: 40px 20px;
+
+}
+
+/* Card styles */
+.project-card {
+  background: #eefffe;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
+.project-card img {
+  width: 100%;
+  height: 220px; /* bigger image */
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-content h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+.project-content p {
+  font-size: 15px;
+  color: #555;
+  margin: 0 0 20px;
+  flex-grow: 1;
+}
+
+/* View Project button-like link */
+.view-link {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #007bff;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,123,255,0.3);
+}
+
+.view-link:hover {
+  background: #0056b3;
+  box-shadow: 0 6px 14px rgba(0,86,179,0.5);
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .project-grid {
+    grid-template-columns: 1fr; /* stack on smaller screens */
+  }
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+   <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>2-A-2A, Second Floor
+                        Research & Innovation Park
+                        IIT Delhi- 110016
+                        India</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91 70555 59999</small>
+                    <a href="mailto:ceo@spplindia.org">
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>ceo@spplindia.org</small>
+                        </a>
+                        
+                      
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/profile.php?id=61566067058124"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.linkedin.com/company/104458075/admin/page-posts/published/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+<!-- Navbar Start -->
+<div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center p-0" style="position: relative;display: flex;justify-content: center; align-items: center;">
+            <div id="logosppl" style=" height: 68px; aspect-ratio: 1;background-size: contain; background-color: rgba(255, 255, 255, 0.1); display: flex;justify-content: center;align-items: center; border-radius: 50%;">
+                <img src="img/logo3.png" alt="SPPL India" style="height:82%; aspect-ratio: 1;">
+
+            </div>
+            <div style="margin-left: 15px;">
+                <h style="font-size: 27px; color: #fb5238; margin: 0; position: relative; top: 9px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"><strong>SPPL India</strong>
+                </h><br>
+                <span style="font-size: 15px; color: #e7cf4a;  position: relative; top: 4 px; margin-left: -6px;"><strong>An IIT Delhi Company</strong>
+                </span>
+            </div>
+            <!-- <img  src="img/iitdlogo2.png" style="height: 24px; aspect-ratio: 1; margin-left: 5px; margin-top: 44px;"> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <div class="nav-item dropdown">
+                    <a href="index.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="about.html" class="dropdown-item">About SPPL</a>
+                        <a href="vision.html" class="dropdown-item">Vision and Mission</a>
+                        <a href="scope.html" class="dropdown-item">Our Scope</a>
+                        <a href="i&r.html" class="dropdown-item">Innovation & Research</a>
+                        <a href="t&c.html" class="dropdown-item">Training & Consultation</a>
+                        <a href="feature.html" class="dropdown-item">Process Features</a>
+                        <a href="policy.html" class="dropdown-item">Business Policy</a>
+                        <a href="rules.html" class="dropdown-item">Rules for Clients and Partners</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Business Verticals</a>
+                <div class="dropdown-menu m-0">
+                    <a href="product.html" class="dropdown-item">Products</a>
+                    <a href="service.html" class="dropdown-item">Services</a>
+                    <a href="r&d.html" class="dropdown-item">Research and Development</a>
+                </div>
+            </div>
+          <div class="nav-item">
+  <a href="our-products.html" class="nav-link">Products</a>
+</div>
+            <!-- <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Team</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="business_team.html" class="dropdown-item">Business</a>
+                        <a href="R&D_team.html" class="dropdown-item">R & D</a>
+                        <a href="consultants.html" class="dropdown-item">Consultants</a>
+
+                    </div>
+                </div> -->
+
+            <!-- <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
+            <div class="dropdown-menu m-0">
+                <a href="project.html" class="dropdown-item">SPPL Projects</a>
+
+            </div>
+        </div> -->
+         <div class="nav-item">
+  <a href="projects.html" 
+     class="nav-link" 
+     onclick="window.location.href='projects.html'">
+     Projects
+  </a>
+</div>
+       
+               <a href="https://dashboard.spplindia.org" class="nav-item nav-link">Dashboard</a>
+                <a href="blog.html" class="nav-item nav-link">Blogs</a>
+
+                <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Contact</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="client_querry.php" class="dropdown-item">Client</a>
+                        <a href="partnership_Inquiry.php" class="dropdown-item">Partnership</a>
+                        <a href="collaboration.php" class="dropdown-item">Organisation</a>
+
+                    </div>
+                </div>            </div>
+            <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+        </div>
+    </nav>
+
+
+        <!-- <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+            <div class="row py-5">
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-4 text-white animated zoomIn">Our Projects</h1>
+                </div>
+            </div>
+            
+        </div> --><div class="container-fluid bg-primary py-3 bg-header" style="margin-bottom: 50px;">
+    <div class="row py-3">
+        <div class="col-12 pt-lg-4 mt-lg-4 text-center">
+            <h1 class="display-4 text-white animated zoomIn mt-5">Current Projects</h1>
+            
+        </div>
+    </div>
+</div>
+ 
+
+<!-- Paste slider code here -->
+
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+    <!-- Text Start -->
+    <!-- <table id="table3">
+        <tr>
+            <th class="th-type1"></th>
+            <th class="th-type2">Details</th>
+            <th class="th-type3">Progress</th>
+        </tr>
+        
+        <tr>
+            <td class="td-type1">
+                <img src="img/Projects/chipyana.png" alt="Image Description">
+            </td>            <td class="td-type2" style="vertical-align: top;">
+                <p style="font-size: 20px;"><strong>Chipyana Bridge Monitoring</strong></p>
+                            <p style="font-size: 15px; text-align: justify; padding-left: 20px; padding-right: 20px;"></p></td></td>
+            <td class="td-type3"><a href="" target="_blank" ><strong></a><br>Completed</strong><br><a href="" target="_blank" style="Font-size : 18px;"  ><u></u></a></td>
+        </tr>
+        <th class="th-type1"></th><br>
+        <th class="th-type1"></th><br>
+        
+        <tr>
+            <td class="td-type1">
+                <img src="img/Projects/baouli1.jpg" alt="Image Description">
+            </td>            <td class="td-type2" style="vertical-align: top;">
+                <p style="font-size: 20px;"><strong>Impact Monitoring of Agrasen Ki Baoli</strong></p>
+                            <p style="font-size: 15px; text-align: justify; padding-left: 20px; padding-right: 20px;"></p></td></td>
+            <td class="td-type3"><a href="" target="_blank" ><strong></a><br>Completed</strong><br><a href="" target="_blank" style="Font-size : 18px;"  ><u></u></a></td>
+        </tr>
+    
+        </table></table> -->
+    <!-- Text End -->
+
+
+
+  <!-- Project 1 -->
+  <!-- <div class="project-card">
+    <div class="project-img">
+      <img src="img/Projects/chipyana.png" alt="Chipyana Bridge Monitoring">
+    </div>
+    <div class="project-details">
+      <h3>Chipyana Bridge Monitoring</h3>
+      <p></p>
+    </div>
+    <div class="project-status">
+      <span class="status">Completed</span><br>
+      <a href="#" target="_blank" class="project-link">View Project</a>
+    </div>
+  </div>
+
+   Project 2 -->
+  <!-- <div class="project-card">
+    <div class="project-img">
+      <img src="img/Projects/baouli1.jpg" alt="Agrasen Ki Baoli Monitoring">
+    </div>
+    <div class="project-details">
+      <h3>Impact Monitoring of Agrasen Ki Baoli</h3>
+      <p></p>
+    </div>
+    <div class="project-status">
+      <span class="status">Completed</span><br>
+      <a href="#" target="_blank" class="project-link">View Project</a>
+    </div>
+  </div>
+
+</div> -->
+
+ <div class="project-grid" style="margin-top: -3rem; ">
+
+   
+    <div class="project-card">
+      <img src="img/Projects/bridge.avif"  alt="Chipyana Bridge Monitoring">
+      <div class="project-content">
+        <h3>Chipyana Bridge Monitoring</h3>
+        <b>
+            <p>Structural health monitoring of Chipyana bridge with real-time sensors.</p>
+        </b>
+        <a href="project-detail.html" class="view-link" >View Project →</a>
+
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="img/Projects/gara2.jpg" alt="Agrasen Ki Baoli" >
+      <div class="project-content">
+        <h3>Structural Monitoring of Pier P3, Garra River Bridge</h3>
+        <b>
+            <p>Structural health monitoring of Pier Frame P3 and pile cap using advanced sensor instrumentation.</p>
+        </b>
+        <a href="project-detail2.html" class="view-link">View Project →</a>
+      </div>
+    </div>
+
+  
+    <div class="project-card">
+      <img src="img/Projects/ag2.webp" alt="Project Three">
+      <div class="project-content">
+        <h3>Agrasen ki Baoli, New Delhi</h3>
+       <b>
+         <p>Structural health monitoring of Agrasen Ki Baoli to study water rise and vibration effects</p>
+       </b>
+        <a href="project-detail3.html" class="view-link">View Project →</a>
+      </div>
+    </div>
+
+   
+    <div class="project-card">
+      <img src="img/Projects/ag3.jpg" alt="Project Four">
+      <div class="project-content">
+        <h3>Cardiothoracic & Neuroscience Centre, AIIMS New Delhi</h3>
+        <b>
+            <p>Load testing and IoT based SHM planned after NDE, based on condition assessment reports.</p>
+        </b>
+        <a href="project-detail4.html" class="view-link">View Project →</a>
+      </div>
+    </div>
+
+  </div>
+
+
+<!-- Vendor Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5 mb-5">
+        <div class="logos"> <!-- Changed this class -->
+            <div class="logo-slide">
+                <img src="img/logo/Larsen&Toubro_logo.svg" alt="L and T" srcset=""
+                    style="width: 70px; margin-left: 40px;">
+                <img src="img/logo/nhai.jpg" alt="NHAI" srcset="" style="width: 125px;">
+                <img src="img/logo/AIIMS_New_Delhi.png" alt="IIT Delhi" srcset="" style="width: 70px;">
+                <img src="img/logo/moc 1.svg" alt="MOC Delhi" srcset="" style="width: 125px;">
+                <img src="img/logo/ishms-logo.png" alt="" style="width: 70px; height: 70px;">
+                <img src="img/logo/Indian_Institute_of_Technology_Delhi_Logo.svg.png" alt=""
+                    style="width: 70px; height: 70px;">
+                <img src="img/logo/richter.png" alt="" style="width: 70px; height: 70px;">
+                <img src="img/logo/Fitt.png" alt="" style="width: 80px;">
+                <img src="img/logo/avgc.png" alt="" style="width: 150px; height: 70px;">
+                <img src="img/logo/railways 1.webp" alt="" style="width: 70px; height: 70px;">
+                <img src="img/logo/MSME Logo Vector.jpg" alt="" style="width: 70px; height: 70px;">
+            </div>
+            <div class="logo-slide">
+                <img src="img/logo/Larsen&Toubro_logo.svg" alt="L and T" srcset=""
+                    style="width: 70px; margin-left: 40px;">
+                <img src="img/logo/nhai.jpg" alt="NHAI" srcset="" style="width: 125px;">
+                <img src="img/logo/AIIMS_New_Delhi.png" alt="IIT Delhi" srcset="" style="width: 70px;">
+                <img src="img/logo/moc 1.svg" alt="MOC Delhi" srcset="" style="width: 125px;">
+                <img src="img/logo/ishms-logo.png" alt="" style="width: 70px; height: 70px;">
+                <img src="img/logo/Indian_Institute_of_Technology_Delhi_Logo.svg.png" alt=""
+                    style="width: 70px; height: 70px;">
+                <img src="img/logo/richter.png" alt="" style="width: 70px; height: 70px;">
+                <img src="img/logo/Fitt.png" alt="" style="width: 80px;">
+                <img src="img/logo/avgc.png" alt="" style="width: 150px; height: 70px;">
+                <img src="img/logo/railways 1.webp" alt="" style="width: 70px; height: 70px;">
+                <img src="img/logo/MSME Logo Vector.jpg" alt="" style="width: 70px; height: 70px;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Vendor End -->
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-4 col-md-6 footer-about">
+                <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 p-4">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="m-0 text-white">
+                            <img src="img/logo3.png" alt="SPPL Logo"
+                                style="width: 70px; height: 70px; margin-right: 10px;">
+                            SPPL India<p class="mt-3 mb-4" style="font-size: 20px;"><strong>Incubated at FITT, IIT
+                                    Delhi</strong></p>
+                        </h1>
+                    </a>
+
+
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-light mb-0">Get In Touch</h3>
+                        </div>
+                        <div class="d-flex mb-2" style="display:flex; flex-direction:column">
+                            <div>
+                                <i class="bi bi-geo-alt text-primary me-2"></i>2-A-2A, Second Floor Research &
+                                Innovation Park IIT Delhi - 110016
+                            </div>
+                            <div>
+                                <i class="bi bi-geo-alt text-primary me-2"></i>Mapsko Mountville, Sector - 79 Gurgaon
+                                Haryana - 122004
+                            </div>
+                        </div>
+                        <div class="d-flex mb-2" style="flex-direction: column;">
+                            <div>
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <a href="mailto:ceo@spplindia.org" style="text-decoration: none; color: white;">ceo@spplindia.org</a>
+                            </div>
+                            <div>
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <a href="mailto:office@spplindia.org" style="text-decoration: none; color: white;">office@spplindia.org</a>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-telephone text-primary me-2"></i>
+                            <p class="mb-0">+91 70555 59999</p>
+                        </div>
+                        <div class="d-flex mb-2">
+    <i class="bi bi-receipt text-primary me-2"></i>
+    <p class="mb-0">GSTIN: 06ABNCS8407Q1ZH</p>
+</div>
+                        <div class="d-flex mt-4">
+                            <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a> -->
+                            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                                href="https://www.facebook.com/profile.php?id=61566067058124"><i
+                                    class="fab fa-facebook-f fw-normal"></i></a>
+                            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                                href="https://www.linkedin.com/company/104458075/admin/page-posts/published/"><i
+                                    class="fab fa-linkedin-in fw-normal"></i></a>
+                            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                                    class="fab fa-instagram fw-normal"></i></a>
+                            <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-light mb-0">Quick Links</h3>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+                            <a class="text-light mb-2" href="about.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>About SPPL</a>
+                            <a class="text-light mb-2" href="vision.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Vision and Mission</a>
+                            <a class="text-light mb-2" href="i&r.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Innovation & Research</a>
+                            <a class="text-light mb-2" href="feature.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Our Features</a>
+                            <a class="text-light mb-2" href="policy.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Business Policy</a>
+                            <a class="text-light" href="t&c.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Training & Consultation</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-light mb-0">Popular Links</h3>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+
+
+                            <a class="text-light mb-2" href="product.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Our Products</a>
+                            <a class="text-light mb-2" href="service.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Services</a>
+                            <a class="text-light mb-2" href="r&d.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Research & Development</a>
+                            <a class="text-light mb-2" href="Business_team.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Business Partners</a>
+                            <a class="text-light mb-2" href="R&D_team.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>R & D professionals</a>
+                            <a class="text-light" href="consultants.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Consultants</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid text-white" style="background: #061429;">
+    <div class="container text-center">
+        <div class="row justify-content-center"> <!-- Changed justify-content-end to justify-content-center -->
+            <div class="col-lg-8 col-md-6">
+                <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                    <a class="text-white" href="" style="margin-left: 10px;">&copy; www.spplindia.org</a>
+                    <span style="margin-left: 10px;"> All Rights Reserved.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Footer End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

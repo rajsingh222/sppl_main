@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Overview</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --main-color: #045d82;
+    }
+  </style>
+</head>
+<body class="bg-white flex items-center justify-center min-h-screen">
+
+  <div class="rounded-2xl shadow-lg flex flex-col md:flex-row items-center p-8 max-w-6xl border"
+       style="border-color: var(--main-color);">
+    
+    <!-- Left Side (Product Image + Buttons) -->
+    <div class="flex flex-col items-center w-full md:w-1/2 p-4">
+      <img src="device.png" alt="Device Image" class="w-64 mb-6 drop-shadow-lg">
+
+      <!-- <button style="background-color: var(--main-color);" 
+              class="hover:opacity-90 text-white font-semibold px-6 py-3 rounded-lg w-48 mb-4">
+        Get a Quote
+      </button>
+
+      <input type="email" placeholder="Your Email" 
+             class="w-72 px-4 py-3 mb-4 border rounded-lg outline-none text-gray-800"
+             style="border-color: var(--main-color);">
+
+      <button style="background-color: var(--main-color);" 
+              class="hover:opacity-90 text-white font-semibold px-6 py-3 rounded-lg w-72">
+        Download Brochure
+      </button> -->
+    </div>
+
+    <!-- Right Side (Overview + Features) -->
+    <div class="w-full md:w-1/2 p-6">
+      <h2 style="color: var(--main-color);" class="text-3xl font-bold mb-4">Overview</h2>
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        Introduce precision and reliability to your structural health monitoring with Digitex’ xCAS. Our high-performance system offers multi-channel real-time data acquisition and structural analysis with manual and event-driven triggering. The system can integrate most sensor types to offer a more detailed picture of a structure’s health.
+
+With a sampling rate of up to 1,000 samples per second, the xCAS system features an extensive set of remote tools for real-time monitoring. The Voyager® central acquisition software, integrated into xRover, provides Real-Time data management and analysis. User can access the data from any internet enabled computer with appropriate login information.
+
+The system is designed to work with one or more xRover units and can integrate and manage almost all sensor types. Advanced analysis can be done using Digitex’ powerful data analysis software Observer®.
+
+
+      </p>
+
+      <h3 style="color: var(--main-color);" class="text-xl font-semibold mb-4">Key Features</h3>
+      <ul class="space-y-3 text-gray-800">
+        <li class="flex items-center"><span style="color: var(--main-color);" class="mr-2">✔</span> Industrial-grade rugged enclosure</li>
+        <li class="flex items-center"><span style="color: var(--main-color);" class="mr-2">✔</span> Real-time data acquisition, management, and analysis</li>
+        <li class="flex items-center"><span style="color: var(--main-color);" class="mr-2">✔</span> SQL data archiving and web-based reporting</li>
+        <li class="flex items-center"><span style="color: var(--main-color);" class="mr-2">✔</span> Triggering, data compression and event management</li>
+        <li class="flex items-center"><span style="color: var(--main-color);" class="mr-2">✔</span> Ethernet, Wi-Fi, GPS and RTC time sync</li>
+        <li class="flex items-center"><span style="color: var(--main-color);" class="mr-2">✔</span> Self-testing, remote control and power management</li>
+        <li class="flex items-center"><span style="color: var(--main-color);" class="mr-2">✔</span> Digital output signals, low power consumption and POE support</li>
+        <li class="flex items-center"><span style="color: var(--main-color);" class="mr-2">✔</span> Wide operating temperature range</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+Locations,Sensor Links, Skeletal Image
+Rashtrapati Bhawan,resources/CSVs/Test Sensor Data.csv, images/img1.jpeg
+Lecture Hall IITD,resources/CSVs/Test Sensor Data.csv,images/img2.jpeg
+SCOOPS,resources/CSVs/Test Sensor Data.csv,images/img3.jpeg
+BLOCK IV,resources/CSVs/Test Sensor Data.csv,images/img4.jpeg
+Main Building,resources/CSVs/Test Sensor Data.csv,images/img5.jpeg

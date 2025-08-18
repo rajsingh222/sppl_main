@@ -1,0 +1,107 @@
+<style>
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-box {
+  flex: 1 1 160px;
+  max-width: 180px;
+  margin: 0.8rem;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem 0.8rem;
+  text-align: center;
+  border: 2px solid #222;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #222;
+}
+
+.product-box:hover {
+  background: #045d82;
+  color: #fff;
+}
+
+.product-body {
+  display: none;  /* hidden by default */
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 2px solid #045d82;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.product-body.active {
+  display: block; /* show when active */
+}
+</style>
+
+<div class="product-container">
+  <div class="product-box" onclick="showBody('distributed')">
+    <i class="bi bi-hdd-network"></i>
+    <h3>Distributed</h3>
+  </div>
+  <div class="product-box" onclick="showBody('centralised')">
+    <i class="bi bi-hdd-network"></i>
+    <h3>Centralised</h3>
+  </div>
+  <div class="product-box" onclick="showBody('standalone')">
+    <i class="bi bi-hdd-network"></i>
+    <h3>Standalone</h3>
+  </div>
+  <div class="product-box" onclick="showBody('portable')">
+    <i class="bi bi-hdd-network"></i>
+    <h3>Portable</h3>
+  </div>
+  <div class="product-box" onclick="showBody('personal')">
+    <i class="bi bi-hdd-network"></i>
+    <h3>Personal</h3>
+  </div>
+  <div class="product-box" onclick="showBody('software')">
+    <i class="bi bi-hdd-network"></i>
+    <h3>Software & More</h3>
+  </div>
+</div>
+
+<!-- Hidden bodies -->
+<div id="distributed" class="product-body">
+  <h2>Distributed System</h2>
+  <p>Details and products related to Distributed systems go here...</p>
+</div>
+
+<div id="centralised" class="product-body">
+  <h2>Centralised System</h2>
+  <p>Details and products related to Centralised systems go here...</p>
+</div>
+
+<div id="standalone" class="product-body">
+  <h2>Standalone System</h2>
+  <p>Details and products related to Standalone systems go here...</p>
+</div>
+
+<div id="portable" class="product-body">
+  <h2>Portable System</h2>
+  <p>Details and products related to Portable systems go here...</p>
+</div>
+
+<div id="personal" class="product-body">
+  <h2>Personal System</h2>
+  <p>Details and products related to Personal systems go here...</p>
+</div>
+
+<div id="software" class="product-body">
+  <h2>Software & More</h2>
+  <p>Details and products related to Software & More go here...</p>
+</div>
+
+<script>
+function showBody(id) {
+  // Hide all product bodies
+  document.querySelectorAll('.product-body').forEach(el => el.classList.remove('active'));
+
+  // Show selected one
+  document.getElementById(id).classList.add('active');
+}
+</script>
